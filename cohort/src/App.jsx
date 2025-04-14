@@ -7,7 +7,7 @@ const App = () => {
     { id: 2, name: "Feranmi", gender: "Male", attendance: false },
     { id: 3, name: "Ridwan", gender: "Male", attendance: true },
     { id: 4, name: "Idris", gender: "Male", attendance: false },
-    { id: 5, name: "Muizi", gender: "Male", attendance: true },
+    { id: 5, name: "Muizi", gender: "Male", attendance: true }
   ]);
 
   const handleAttendance = (id) => {
@@ -16,6 +16,8 @@ const App = () => {
     );
     setCohorts(cohortList);
     localStorage.setItem('cohortList', JSON.stringify(cohortList));
+    
+
   };
 
   const handleDelete = (id) => {
