@@ -33,6 +33,7 @@ const App = () => {
       saveToLocalStorage(updatedTodos);
       setInputValue('');
       setIsLoading(false);
+      
     }
   };
 

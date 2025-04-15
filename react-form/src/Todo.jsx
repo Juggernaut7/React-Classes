@@ -1,6 +1,7 @@
 import React from 'react';
 import TodoItem from './TodoItem';
 
+
 const Todo = ({ todos, deleteTodo, handleComplete, updateTodo }) => {
   return (
     <div className="w-full max-w-md">
@@ -17,6 +18,7 @@ const Todo = ({ todos, deleteTodo, handleComplete, updateTodo }) => {
               deleteTodo={deleteTodo}
               handleComplete={handleComplete}
               updateTodo={updateTodo}
+              
             />
           ))}
         </ul>

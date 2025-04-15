@@ -4,7 +4,7 @@ const TodoItem = ({ todo, updateTodo, deleteTodo, handleComplete }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editText, setEditText] = useState(todo.text);
 
-  // 🛠 Fix: Sync editText with updated todo.text when todo changes
+  
   useEffect(() => {
     setEditText(todo.text);
   }, [todo.text]);
@@ -74,6 +74,7 @@ const TodoItem = ({ todo, updateTodo, deleteTodo, handleComplete }) => {
         )}
         <button
           onClick={() => deleteTodo(todo.id)}
+          
           className='bg-red-500 text-white px-2 py-1 rounded hover:bg-red-600'
         >
           Delete
