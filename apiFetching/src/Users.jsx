@@ -5,7 +5,7 @@ import { useState } from 'react';
 import UserList from './UserList';
 
 
-const API_URL = 'https://jsonplaceholder.typicode.com/users';
+const API_URL = import.meta.env.VITE_API_URL_USER;
 
 
 
